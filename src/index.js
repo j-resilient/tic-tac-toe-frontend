@@ -1,6 +1,6 @@
-const View = // require appropriate file
-const Game = // require appropriate file
+const View = require("./ttt-view");
+const Game = require("../back_end/game");
 
   $(() => {
-    // Your code here
+    // Your code here 
   });
