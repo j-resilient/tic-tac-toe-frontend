@@ -15,7 +15,14 @@ class View {
 
       // if game won, alert win
       if (this.game.isOver()) {
-        alert(this.game.winner() + " wins!");
+        const winner = this.game.winner();
+        if (winner) {
+          alert(winner + " wins!");
+        } else {
+          alert("It's a tie!");
+        }
+
+        $("ul").off("click");
       }
     });
   }
